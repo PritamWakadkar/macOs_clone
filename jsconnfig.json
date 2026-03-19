@@ -1,0 +1,9 @@
+{
+    "compileroPtions":{
+        "baseUrl":".",
+        "path":{
+            "#*":["src/*"]
+        }
+    },
+    "#inlcude":["src"]
+}
