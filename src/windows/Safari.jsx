@@ -1,5 +1,6 @@
 import React from 'react'
-import WindowsControls from '../components/WindowsControls'
+import {WindowsControls} from '../components/WindowsControls'
+import WindowWrapper from '../hoc/WindowWrapper' 
 
 const Safari = () => {
   return (
@@ -9,6 +10,10 @@ const Safari = () => {
       </div>   
     </>
   )
+
 }
 
-export default Safari
+  const safariWindow = WindowWrapper(Safari ,"Safari") 
+
+
+export default safariWindow

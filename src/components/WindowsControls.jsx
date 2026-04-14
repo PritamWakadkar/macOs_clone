@@ -6,10 +6,10 @@ const WindowsControls = ({target}) => {
   const {closeWindow} = useWindowStore()
 
   return (
-    <div id='window-controls'>
-      <div className='close'  onClick={()=>closeWindow(target)} />
-      <div className='minimize'   />
-      <div  className='maximize'/>
+    <div id='window-flex gap-2'>
+      <div className='size-3.5 rounded-full bg-[#ff6157] cursor-pointer'  onClick={()=>closeWindow(target)} />
+      <div className='size-3.5 rounded-full bg-[#ffc030]'   />
+      <div  className='size-3.5 rounded-full bg-[#2acb42]'/>
     </div>
   )
 }
